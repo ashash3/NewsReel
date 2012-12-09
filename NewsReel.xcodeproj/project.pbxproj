@@ -18,6 +18,7 @@
 		AB1BD48A1675539000DCA590 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4891675539000DCA590 /* Default-568h@2x.png */; };
 		AB1BD48D1675539000DCA590 /* NewsReelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD48C1675539000DCA590 /* NewsReelViewController.m */; };
 		AB1BD4901675539000DCA590 /* NewsReelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */; };
+		AB1BD49C1675557500DCA590 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD49B1675557500DCA590 /* background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AB1BD48B1675539000DCA590 /* NewsReelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsReelViewController.h; sourceTree = "<group>"; };
 		AB1BD48C1675539000DCA590 /* NewsReelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsReelViewController.m; sourceTree = "<group>"; };
 		AB1BD48F1675539000DCA590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NewsReelViewController.xib; sourceTree = "<group>"; };
+		AB1BD49B1675557500DCA590 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				AB1BD48B1675539000DCA590 /* NewsReelViewController.h */,
 				AB1BD48C1675539000DCA590 /* NewsReelViewController.m */,
 				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
+				AB1BD49A1675557500DCA590 /* Resources */,
 				AB1BD47A1675539000DCA590 /* Supporting Files */,
 			);
 			path = NewsReel;
@@ -105,6 +108,14 @@
 				AB1BD4891675539000DCA590 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB1BD49A1675557500DCA590 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB1BD49B1675557500DCA590 /* background@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				AB1BD4881675539000DCA590 /* Default@2x.png in Resources */,
 				AB1BD48A1675539000DCA590 /* Default-568h@2x.png in Resources */,
 				AB1BD4901675539000DCA590 /* NewsReelViewController.xib in Resources */,
+				AB1BD49C1675557500DCA590 /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

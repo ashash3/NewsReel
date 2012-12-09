@@ -11,13 +11,16 @@
 #import "NewsReelViewController.h"
 
 @implementation NewsReelAppDelegate
+@synthesize navController;
+@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[NewsReelViewController alloc] initWithNibName:@"NewsReelViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

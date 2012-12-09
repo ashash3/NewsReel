@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"NewsReel";
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
 }
 
 - (void)didReceiveMemoryWarning
