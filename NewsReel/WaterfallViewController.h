@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EKStreamView.h"
 
-@interface WaterfallViewController : UIViewController
+@interface WaterfallViewController : UIViewController<EKStreamViewDelegate>
+{
+    NSMutableArray* randomHeights;
+}
+
+@property (copy, nonatomic) NSArray* images;
+
+@property (weak, nonatomic) IBOutlet EKStreamView *stream;
 
 @end

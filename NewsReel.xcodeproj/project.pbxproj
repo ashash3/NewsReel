@@ -29,8 +29,6 @@
 		AB1BD4AE16756F9C00DCA590 /* world@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A816756F9C00DCA590 /* world@2x.png */; };
 		AB1BD4AF16756F9C00DCA590 /* worldHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A916756F9C00DCA590 /* worldHighlighted@2x.png */; };
 		AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B0167570F500DCA590 /* politics@2x.png */; };
-		AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4B31675764800DCA590 /* PoliticsViewController.m */; };
-		AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */; };
 		AB1BD4D0167585CF00DCA590 /* politics0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CB167585CF00DCA590 /* politics0.jpeg */; };
 		AB1BD4D1167585CF00DCA590 /* politics1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CC167585CF00DCA590 /* politics1.jpeg */; };
 		AB1BD4D2167585CF00DCA590 /* politics2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CD167585CF00DCA590 /* politics2.jpeg */; };
@@ -73,9 +71,6 @@
 		AB1BD4A816756F9C00DCA590 /* world@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world@2x.png"; sourceTree = "<group>"; };
 		AB1BD4A916756F9C00DCA590 /* worldHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worldHighlighted@2x.png"; sourceTree = "<group>"; };
 		AB1BD4B0167570F500DCA590 /* politics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "politics@2x.png"; sourceTree = "<group>"; };
-		AB1BD4B21675764700DCA590 /* PoliticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticsViewController.h; sourceTree = "<group>"; };
-		AB1BD4B31675764800DCA590 /* PoliticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticsViewController.m; sourceTree = "<group>"; };
-		AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoliticsViewController.xib; sourceTree = "<group>"; };
 		AB1BD4CB167585CF00DCA590 /* politics0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics0.jpeg; sourceTree = "<group>"; };
 		AB1BD4CC167585CF00DCA590 /* politics1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics1.jpeg; sourceTree = "<group>"; };
 		AB1BD4CD167585CF00DCA590 /* politics2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics2.jpeg; sourceTree = "<group>"; };
@@ -148,9 +143,6 @@
 				AB1BD48B1675539000DCA590 /* NewsReelViewController.h */,
 				AB1BD48C1675539000DCA590 /* NewsReelViewController.m */,
 				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
-				AB1BD4B21675764700DCA590 /* PoliticsViewController.h */,
-				AB1BD4B31675764800DCA590 /* PoliticsViewController.m */,
-				AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */,
 				AB1BD4FF1675D20900DCA590 /* WaterfallViewController.h */,
 				AB1BD5001675D20900DCA590 /* WaterfallViewController.m */,
 				AB1BD5011675D20A00DCA590 /* WaterfallViewController.xib */,
@@ -275,7 +267,6 @@
 				AB1BD4AE16756F9C00DCA590 /* world@2x.png in Resources */,
 				AB1BD4AF16756F9C00DCA590 /* worldHighlighted@2x.png in Resources */,
 				AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */,
-				AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */,
 				AB1BD4D0167585CF00DCA590 /* politics0.jpeg in Resources */,
 				AB1BD4D1167585CF00DCA590 /* politics1.jpeg in Resources */,
 				AB1BD4D2167585CF00DCA590 /* politics2.jpeg in Resources */,
@@ -315,7 +306,6 @@
 				AB1BD4841675539000DCA590 /* NewsReelAppDelegate.m in Sources */,
 				AB1BD48D1675539000DCA590 /* NewsReelViewController.m in Sources */,
 				AB1BD49F167568A700DCA590 /* UIButton+NewsReelAdditions.m in Sources */,
-				AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */,
 				AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */,
 				AB1BD4FD1675A7D100DCA590 /* SingleImageViewController.m in Sources */,
 				AB1BD5021675D20A00DCA590 /* WaterfallViewController.m in Sources */,
