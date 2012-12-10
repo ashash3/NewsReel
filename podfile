@@ -1,0 +1,2 @@
+platform :ios
+pod 'EKStreamView', '~> 0.0.1'

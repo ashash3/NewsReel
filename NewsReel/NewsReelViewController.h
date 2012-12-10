@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface NewsReelViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *politicsButton;
+@property (weak, nonatomic) IBOutlet UIButton *sportsButton;
+@property (weak, nonatomic) IBOutlet UIButton *technologyButton;
+@property (weak, nonatomic) IBOutlet UIButton *worldButton;
+
+- (IBAction)buttonPressed:(UIButton*)sender;
 
 @end

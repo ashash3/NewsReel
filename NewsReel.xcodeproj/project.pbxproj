@@ -19,6 +19,17 @@
 		AB1BD48D1675539000DCA590 /* NewsReelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD48C1675539000DCA590 /* NewsReelViewController.m */; };
 		AB1BD4901675539000DCA590 /* NewsReelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */; };
 		AB1BD49C1675557500DCA590 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD49B1675557500DCA590 /* background@2x.png */; };
+		AB1BD49F167568A700DCA590 /* UIButton+NewsReelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */; };
+		AB1BD4A31675698D00DCA590 /* politicsHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A21675698D00DCA590 /* politicsHighlighted@2x.png */; };
+		AB1BD4AA16756F9C00DCA590 /* sports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A416756F9C00DCA590 /* sports@2x.png */; };
+		AB1BD4AB16756F9C00DCA590 /* sportsHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A516756F9C00DCA590 /* sportsHighlighted@2x.png */; };
+		AB1BD4AC16756F9C00DCA590 /* technology@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A616756F9C00DCA590 /* technology@2x.png */; };
+		AB1BD4AD16756F9C00DCA590 /* technologyHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A716756F9C00DCA590 /* technologyHighlighted@2x.png */; };
+		AB1BD4AE16756F9C00DCA590 /* world@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A816756F9C00DCA590 /* world@2x.png */; };
+		AB1BD4AF16756F9C00DCA590 /* worldHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4A916756F9C00DCA590 /* worldHighlighted@2x.png */; };
+		AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B0167570F500DCA590 /* politics@2x.png */; };
+		AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4B31675764800DCA590 /* PoliticsViewController.m */; };
+		AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +50,19 @@
 		AB1BD48C1675539000DCA590 /* NewsReelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsReelViewController.m; sourceTree = "<group>"; };
 		AB1BD48F1675539000DCA590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NewsReelViewController.xib; sourceTree = "<group>"; };
 		AB1BD49B1675557500DCA590 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		AB1BD49D167568A700DCA590 /* UIButton+NewsReelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NewsReelAdditions.h"; sourceTree = "<group>"; };
+		AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NewsReelAdditions.m"; sourceTree = "<group>"; };
+		AB1BD4A21675698D00DCA590 /* politicsHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "politicsHighlighted@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A416756F9C00DCA590 /* sports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sports@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A516756F9C00DCA590 /* sportsHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sportsHighlighted@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A616756F9C00DCA590 /* technology@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "technology@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A716756F9C00DCA590 /* technologyHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "technologyHighlighted@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A816756F9C00DCA590 /* world@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world@2x.png"; sourceTree = "<group>"; };
+		AB1BD4A916756F9C00DCA590 /* worldHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worldHighlighted@2x.png"; sourceTree = "<group>"; };
+		AB1BD4B0167570F500DCA590 /* politics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "politics@2x.png"; sourceTree = "<group>"; };
+		AB1BD4B21675764700DCA590 /* PoliticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticsViewController.h; sourceTree = "<group>"; };
+		AB1BD4B31675764800DCA590 /* PoliticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticsViewController.m; sourceTree = "<group>"; };
+		AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoliticsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +113,11 @@
 				AB1BD4831675539000DCA590 /* NewsReelAppDelegate.m */,
 				AB1BD48B1675539000DCA590 /* NewsReelViewController.h */,
 				AB1BD48C1675539000DCA590 /* NewsReelViewController.m */,
+				AB1BD4B21675764700DCA590 /* PoliticsViewController.h */,
+				AB1BD4B31675764800DCA590 /* PoliticsViewController.m */,
+				AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */,
+				AB1BD49D167568A700DCA590 /* UIButton+NewsReelAdditions.h */,
+				AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */,
 				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
 				AB1BD49A1675557500DCA590 /* Resources */,
 				AB1BD47A1675539000DCA590 /* Supporting Files */,
@@ -113,6 +142,14 @@
 		AB1BD49A1675557500DCA590 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB1BD4B0167570F500DCA590 /* politics@2x.png */,
+				AB1BD4A416756F9C00DCA590 /* sports@2x.png */,
+				AB1BD4A516756F9C00DCA590 /* sportsHighlighted@2x.png */,
+				AB1BD4A616756F9C00DCA590 /* technology@2x.png */,
+				AB1BD4A716756F9C00DCA590 /* technologyHighlighted@2x.png */,
+				AB1BD4A816756F9C00DCA590 /* world@2x.png */,
+				AB1BD4A916756F9C00DCA590 /* worldHighlighted@2x.png */,
+				AB1BD4A21675698D00DCA590 /* politicsHighlighted@2x.png */,
 				AB1BD49B1675557500DCA590 /* background@2x.png */,
 			);
 			path = Resources;
@@ -176,6 +213,15 @@
 				AB1BD48A1675539000DCA590 /* Default-568h@2x.png in Resources */,
 				AB1BD4901675539000DCA590 /* NewsReelViewController.xib in Resources */,
 				AB1BD49C1675557500DCA590 /* background@2x.png in Resources */,
+				AB1BD4A31675698D00DCA590 /* politicsHighlighted@2x.png in Resources */,
+				AB1BD4AA16756F9C00DCA590 /* sports@2x.png in Resources */,
+				AB1BD4AB16756F9C00DCA590 /* sportsHighlighted@2x.png in Resources */,
+				AB1BD4AC16756F9C00DCA590 /* technology@2x.png in Resources */,
+				AB1BD4AD16756F9C00DCA590 /* technologyHighlighted@2x.png in Resources */,
+				AB1BD4AE16756F9C00DCA590 /* world@2x.png in Resources */,
+				AB1BD4AF16756F9C00DCA590 /* worldHighlighted@2x.png in Resources */,
+				AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */,
+				AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +235,8 @@
 				AB1BD4801675539000DCA590 /* main.m in Sources */,
 				AB1BD4841675539000DCA590 /* NewsReelAppDelegate.m in Sources */,
 				AB1BD48D1675539000DCA590 /* NewsReelViewController.m in Sources */,
+				AB1BD49F167568A700DCA590 /* UIButton+NewsReelAdditions.m in Sources */,
+				AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

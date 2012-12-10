@@ -1,5 +1,5 @@
 //
-//  UIButton+NewsReelAdditions.h
+//  PoliticsViewController.h
 //  NewsReel
 //
 //  Created by Ashley Chou on 12/9/12.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (NewsReelAdditions)
+@interface PoliticsViewController : UIViewController
 
-- (void)styleWith:(NSString*)category;
 @end
