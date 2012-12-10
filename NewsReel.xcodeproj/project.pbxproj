@@ -41,6 +41,7 @@
 		AB1BD4FE1675A7D100DCA590 /* SingleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */; };
 		AB1BD5021675D20A00DCA590 /* WaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD5001675D20900DCA590 /* WaterfallViewController.m */; };
 		AB1BD5031675D20A00DCA590 /* WaterfallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD5011675D20A00DCA590 /* WaterfallViewController.xib */; };
+		AB1BD5091675DFFB00DCA590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD5081675DFFA00DCA590 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		AB1BD4FF1675D20900DCA590 /* WaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterfallViewController.h; sourceTree = "<group>"; };
 		AB1BD5001675D20900DCA590 /* WaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterfallViewController.m; sourceTree = "<group>"; };
 		AB1BD5011675D20A00DCA590 /* WaterfallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterfallViewController.xib; sourceTree = "<group>"; };
+		AB1BD5081675DFFA00DCA590 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		AB1BD4641675538F00DCA590 = {
 			isa = PBXGroup;
 			children = (
+				AB1BD5081675DFFA00DCA590 /* Default@2x.png */,
 				AB1BD4791675538F00DCA590 /* NewsReel */,
 				AB1BD4721675538F00DCA590 /* Frameworks */,
 				AB1BD4701675538F00DCA590 /* Products */,
@@ -280,6 +283,7 @@
 				AB1BD4E516758D6600DCA590 /* politics4.jpeg in Resources */,
 				AB1BD4FE1675A7D100DCA590 /* SingleImageViewController.xib in Resources */,
 				AB1BD5031675D20A00DCA590 /* WaterfallViewController.xib in Resources */,
+				AB1BD5091675DFFB00DCA590 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
