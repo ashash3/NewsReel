@@ -12,17 +12,25 @@
 @implementation ImagePaneView
 @synthesize imageView;
 @synthesize reuseIdentifier;
+@synthesize contentView;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        contentView = [[UIView alloc] initWithFrame:self.bounds];
+        imageView = [[UIImageView alloc] initWithFrame:contentView.bounds];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
-        [self addSubview:imageView];
-        self.clipsToBounds = YES;
-
+        [contentView addSubview:imageView];
+        contentView.clipsToBounds = YES;
+        self.layer.masksToBounds = NO;
+        self.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+        self.layer.shadowRadius = 1.5f;
+        self.layer.shadowOpacity = 0.8f;
+        self.layer.shadowOffset = CGSizeMake(0, 2);
+        [self addSubview:contentView];
+        
     }
     return self;
 }
@@ -30,7 +38,9 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    imageView.frame = self.bounds;
+    contentView.frame = self.bounds;
+    imageView.frame = contentView.bounds;
+    self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
 }
 
 @end

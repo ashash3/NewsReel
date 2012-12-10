@@ -16,7 +16,7 @@
     [self setBackgroundImage:[UIImage imageNamed:category] forState:UIControlStateNormal];
     [self setBackgroundImage:[UIImage imageNamed: [NSString stringWithFormat:@"%@Highlighted", category]] forState:UIControlStateHighlighted];
     self.layer.shadowColor = [UIColor darkGrayColor].CGColor;
-    self.layer.shadowRadius = 2.0f;
+    self.layer.shadowRadius = 1.5f;
     self.layer.shadowOpacity = 0.8f;
     self.layer.shadowOffset = CGSizeMake(0, 2);
 }

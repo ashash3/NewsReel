@@ -21,6 +21,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    self.title = @"Politics";
     randomHeights = [[NSMutableArray alloc] initWithCapacity:100];
     for (int i = 0; i < 100; i++) {
         CGFloat h = arc4random() % 200 + 125.f;
