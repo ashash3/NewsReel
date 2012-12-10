@@ -37,6 +37,8 @@
 		AB1BD4D3167585CF00DCA590 /* politics3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CE167585CF00DCA590 /* politics3.jpeg */; };
 		AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4E2167588F900DCA590 /* ImagePaneView.m */; };
 		AB1BD4E516758D6600DCA590 /* politics4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4E416758D6500DCA590 /* politics4.jpeg */; };
+		AB1BD4FD1675A7D100DCA590 /* SingleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4FB1675A7D000DCA590 /* SingleImageViewController.m */; };
+		AB1BD4FE1675A7D100DCA590 /* SingleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,9 @@
 		AB1BD4E1167588F900DCA590 /* ImagePaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePaneView.h; sourceTree = "<group>"; };
 		AB1BD4E2167588F900DCA590 /* ImagePaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePaneView.m; sourceTree = "<group>"; };
 		AB1BD4E416758D6500DCA590 /* politics4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics4.jpeg; sourceTree = "<group>"; };
+		AB1BD4FA1675A7D000DCA590 /* SingleImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageViewController.h; sourceTree = "<group>"; };
+		AB1BD4FB1675A7D000DCA590 /* SingleImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageViewController.m; sourceTree = "<group>"; };
+		AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleImageViewController.xib; sourceTree = "<group>"; };
 		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,12 +139,15 @@
 				AB1BD4831675539000DCA590 /* NewsReelAppDelegate.m */,
 				AB1BD48B1675539000DCA590 /* NewsReelViewController.h */,
 				AB1BD48C1675539000DCA590 /* NewsReelViewController.m */,
+				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
 				AB1BD4B21675764700DCA590 /* PoliticsViewController.h */,
 				AB1BD4B31675764800DCA590 /* PoliticsViewController.m */,
 				AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */,
+				AB1BD4FA1675A7D000DCA590 /* SingleImageViewController.h */,
+				AB1BD4FB1675A7D000DCA590 /* SingleImageViewController.m */,
+				AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */,
 				AB1BD49D167568A700DCA590 /* UIButton+NewsReelAdditions.h */,
 				AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */,
-				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
 				AB1BD4CA167585CF00DCA590 /* Politics Images */,
 				AB1BD49A1675557500DCA590 /* Resources */,
 				AB1BD47A1675539000DCA590 /* Supporting Files */,
@@ -262,6 +270,7 @@
 				AB1BD4D2167585CF00DCA590 /* politics2.jpeg in Resources */,
 				AB1BD4D3167585CF00DCA590 /* politics3.jpeg in Resources */,
 				AB1BD4E516758D6600DCA590 /* politics4.jpeg in Resources */,
+				AB1BD4FE1675A7D100DCA590 /* SingleImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +304,7 @@
 				AB1BD49F167568A700DCA590 /* UIButton+NewsReelAdditions.m in Sources */,
 				AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */,
 				AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */,
+				AB1BD4FD1675A7D100DCA590 /* SingleImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

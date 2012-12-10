@@ -7,6 +7,7 @@
 //
 
 #import "ImagePaneView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation ImagePaneView
 @synthesize imageView;
@@ -21,6 +22,7 @@
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:imageView];
         self.clipsToBounds = YES;
+
     }
     return self;
 }

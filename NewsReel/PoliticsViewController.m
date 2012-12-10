@@ -8,6 +8,7 @@
 
 #import "PoliticsViewController.h"
 #import "ImagePaneView.h"
+#import "SingleImageViewController.h"
 
 @interface PoliticsViewController ()
 
@@ -19,17 +20,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
     randomHeights = [[NSMutableArray alloc] initWithCapacity:100];
     for (int i = 0; i < 100; i++) {
         CGFloat h = arc4random() % 200 + 125.f;
         [randomHeights addObject:[NSNumber numberWithFloat:h]];
     }
     stream.scrollsToTop = YES;
-    
     stream.cellPadding = 5.0f;
     stream.columnPadding = 5.0f;
-    
     [stream reloadData];
 }
 
@@ -38,6 +37,8 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+#pragma mark - EKStream Methods
 
 - (NSInteger)numberOfCellsInStreamView:(EKStreamView *)streamView
 {
@@ -58,15 +59,28 @@
     if (imagePane == nil) {
         imagePane = [[ImagePaneView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
         imagePane.reuseIdentifier = identifier;
+        imagePane.imageView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *selectionTap = [[UITapGestureRecognizer alloc]
+                                                initWithTarget:self action:@selector(handleSingleTap:)];
+        [imagePane addGestureRecognizer:selectionTap];
     }
     [imagePane.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"politics%d.jpeg", index]]];
-    
+    imagePane.tag = index;
+
     return imagePane;
 }
 
 - (CGFloat)streamView:(EKStreamView *)streamView heightForCellAtIndex:(NSInteger)index
 {
-//    return self.view.frame.size.height/2;
     return [[randomHeights objectAtIndex:index] floatValue];
 }
+
+#pragma mark - Gesture Recognizer
+- (IBAction)handleSingleTap:(UIGestureRecognizer*)sender
+{
+    SingleImageViewController* singleImage = [[SingleImageViewController alloc] initWithNibName:@"SingleImageViewController" bundle:nil];
+    [self.navigationController pushViewController:singleImage animated:YES];
+    singleImage.imageIndex = [NSString stringWithFormat:@"politics%d.jpeg", sender.view.tag];
+}
+
 @end
