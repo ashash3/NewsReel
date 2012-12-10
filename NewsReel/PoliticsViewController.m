@@ -76,6 +76,13 @@
     return [[randomHeights objectAtIndex:index] floatValue];
 }
 
+- (UIView *)headerForStreamView:(EKStreamView *)streamView
+{
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 39)];
+    header.alpha = 0; // Complete transparency
+    return header;
+}
+
 #pragma mark - Gesture Recognizer
 - (IBAction)handleSingleTap:(UIGestureRecognizer*)sender
 {
