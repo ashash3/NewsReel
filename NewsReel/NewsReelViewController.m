@@ -9,6 +9,7 @@
 #import "NewsReelViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIButton+NewsReelAdditions.h"
+#import "PoliticsViewController.h"
 
 @interface NewsReelViewController ()
 
@@ -37,7 +38,7 @@
 - (IBAction)buttonPressed:(UIButton*)sender
 {
     if (sender.tag == 0) {
-//        [self.navigationController pushViewController:<#(UIViewController *)#> animated:YES];
+        [self.navigationController pushViewController:[[PoliticsViewController alloc] initWithNibName:@"PoliticsViewController" bundle:nil] animated:YES];
     } 
 }
 

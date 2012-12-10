@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A298985F8B654AADA93DFFDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC897B5291284510ABCCDE55 /* libPods.a */; };
 		AB1BD4741675538F00DCA590 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1BD4731675538F00DCA590 /* UIKit.framework */; };
 		AB1BD4761675538F00DCA590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1BD4751675538F00DCA590 /* Foundation.framework */; };
 		AB1BD4781675538F00DCA590 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1BD4771675538F00DCA590 /* CoreGraphics.framework */; };
@@ -30,9 +31,16 @@
 		AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B0167570F500DCA590 /* politics@2x.png */; };
 		AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4B31675764800DCA590 /* PoliticsViewController.m */; };
 		AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */; };
+		AB1BD4D0167585CF00DCA590 /* politics0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CB167585CF00DCA590 /* politics0.jpeg */; };
+		AB1BD4D1167585CF00DCA590 /* politics1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CC167585CF00DCA590 /* politics1.jpeg */; };
+		AB1BD4D2167585CF00DCA590 /* politics2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CD167585CF00DCA590 /* politics2.jpeg */; };
+		AB1BD4D3167585CF00DCA590 /* politics3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4CE167585CF00DCA590 /* politics3.jpeg */; };
+		AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD4E2167588F900DCA590 /* ImagePaneView.m */; };
+		AB1BD4E516758D6600DCA590 /* politics4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD4E416758D6500DCA590 /* politics4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09E6F737404343C8A7814209 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		AB1BD46F1675538F00DCA590 /* NewsReel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1BD4731675538F00DCA590 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB1BD4751675538F00DCA590 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +71,14 @@
 		AB1BD4B21675764700DCA590 /* PoliticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticsViewController.h; sourceTree = "<group>"; };
 		AB1BD4B31675764800DCA590 /* PoliticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticsViewController.m; sourceTree = "<group>"; };
 		AB1BD4B41675764800DCA590 /* PoliticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoliticsViewController.xib; sourceTree = "<group>"; };
+		AB1BD4CB167585CF00DCA590 /* politics0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics0.jpeg; sourceTree = "<group>"; };
+		AB1BD4CC167585CF00DCA590 /* politics1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics1.jpeg; sourceTree = "<group>"; };
+		AB1BD4CD167585CF00DCA590 /* politics2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics2.jpeg; sourceTree = "<group>"; };
+		AB1BD4CE167585CF00DCA590 /* politics3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics3.jpeg; sourceTree = "<group>"; };
+		AB1BD4E1167588F900DCA590 /* ImagePaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePaneView.h; sourceTree = "<group>"; };
+		AB1BD4E2167588F900DCA590 /* ImagePaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePaneView.m; sourceTree = "<group>"; };
+		AB1BD4E416758D6500DCA590 /* politics4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = politics4.jpeg; sourceTree = "<group>"; };
+		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,7 @@
 				AB1BD4741675538F00DCA590 /* UIKit.framework in Frameworks */,
 				AB1BD4761675538F00DCA590 /* Foundation.framework in Frameworks */,
 				AB1BD4781675538F00DCA590 /* CoreGraphics.framework in Frameworks */,
+				A298985F8B654AADA93DFFDA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,7 @@
 				AB1BD4791675538F00DCA590 /* NewsReel */,
 				AB1BD4721675538F00DCA590 /* Frameworks */,
 				AB1BD4701675538F00DCA590 /* Products */,
+				09E6F737404343C8A7814209 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +120,7 @@
 				AB1BD4731675538F00DCA590 /* UIKit.framework */,
 				AB1BD4751675538F00DCA590 /* Foundation.framework */,
 				AB1BD4771675538F00DCA590 /* CoreGraphics.framework */,
+				FC897B5291284510ABCCDE55 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +128,8 @@
 		AB1BD4791675538F00DCA590 /* NewsReel */ = {
 			isa = PBXGroup;
 			children = (
+				AB1BD4E1167588F900DCA590 /* ImagePaneView.h */,
+				AB1BD4E2167588F900DCA590 /* ImagePaneView.m */,
 				AB1BD4821675539000DCA590 /* NewsReelAppDelegate.h */,
 				AB1BD4831675539000DCA590 /* NewsReelAppDelegate.m */,
 				AB1BD48B1675539000DCA590 /* NewsReelViewController.h */,
@@ -119,6 +140,7 @@
 				AB1BD49D167568A700DCA590 /* UIButton+NewsReelAdditions.h */,
 				AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */,
 				AB1BD48E1675539000DCA590 /* NewsReelViewController.xib */,
+				AB1BD4CA167585CF00DCA590 /* Politics Images */,
 				AB1BD49A1675557500DCA590 /* Resources */,
 				AB1BD47A1675539000DCA590 /* Supporting Files */,
 			);
@@ -155,6 +177,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AB1BD4CA167585CF00DCA590 /* Politics Images */ = {
+			isa = PBXGroup;
+			children = (
+				AB1BD4CB167585CF00DCA590 /* politics0.jpeg */,
+				AB1BD4CC167585CF00DCA590 /* politics1.jpeg */,
+				AB1BD4CD167585CF00DCA590 /* politics2.jpeg */,
+				AB1BD4CE167585CF00DCA590 /* politics3.jpeg */,
+				AB1BD4E416758D6500DCA590 /* politics4.jpeg */,
+			);
+			path = "Politics Images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +199,7 @@
 				AB1BD46B1675538F00DCA590 /* Sources */,
 				AB1BD46C1675538F00DCA590 /* Frameworks */,
 				AB1BD46D1675538F00DCA590 /* Resources */,
+				5BCA0714CC1141AFAB7AC3FD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,10 +257,32 @@
 				AB1BD4AF16756F9C00DCA590 /* worldHighlighted@2x.png in Resources */,
 				AB1BD4B1167570F500DCA590 /* politics@2x.png in Resources */,
 				AB1BD4B61675764800DCA590 /* PoliticsViewController.xib in Resources */,
+				AB1BD4D0167585CF00DCA590 /* politics0.jpeg in Resources */,
+				AB1BD4D1167585CF00DCA590 /* politics1.jpeg in Resources */,
+				AB1BD4D2167585CF00DCA590 /* politics2.jpeg in Resources */,
+				AB1BD4D3167585CF00DCA590 /* politics3.jpeg in Resources */,
+				AB1BD4E516758D6600DCA590 /* politics4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BCA0714CC1141AFAB7AC3FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB1BD46B1675538F00DCA590 /* Sources */ = {
@@ -237,6 +294,7 @@
 				AB1BD48D1675539000DCA590 /* NewsReelViewController.m in Sources */,
 				AB1BD49F167568A700DCA590 /* UIButton+NewsReelAdditions.m in Sources */,
 				AB1BD4B51675764800DCA590 /* PoliticsViewController.m in Sources */,
+				AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +372,7 @@
 		};
 		AB1BD4941675539000DCA590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E6F737404343C8A7814209 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReel/NewsReel-Prefix.pch";
@@ -325,6 +384,7 @@
 		};
 		AB1BD4951675539000DCA590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E6F737404343C8A7814209 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReel/NewsReel-Prefix.pch";
@@ -353,6 +413,7 @@
 				AB1BD4951675539000DCA590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,32 +7,66 @@
 //
 
 #import "PoliticsViewController.h"
+#import "ImagePaneView.h"
 
 @interface PoliticsViewController ()
 
 @end
 
 @implementation PoliticsViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize stream;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    randomHeights = [[NSMutableArray alloc] initWithCapacity:100];
+    for (int i = 0; i < 100; i++) {
+        CGFloat h = arc4random() % 200 + 125.f;
+        [randomHeights addObject:[NSNumber numberWithFloat:h]];
+    }
+    stream.scrollsToTop = YES;
+    
+    stream.cellPadding = 5.0f;
+    stream.columnPadding = 5.0f;
+    
+    [stream reloadData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Release any cached data, images, etc that aren't in use.
 }
 
+- (NSInteger)numberOfCellsInStreamView:(EKStreamView *)streamView
+{
+    return 5;
+}
+
+- (NSInteger)numberOfColumnsInStreamView:(EKStreamView *)streamView
+{
+    return 2;
+}
+
+- (UIView<EKResusableCell> *)streamView:(EKStreamView *)streamView cellAtIndex:(NSInteger)index
+{
+    static NSString *identifier = @"pane";
+    
+    ImagePaneView *imagePane;
+    imagePane = (ImagePaneView*)[streamView dequeueReusableCellWithIdentifier:identifier];
+    if (imagePane == nil) {
+        imagePane = [[ImagePaneView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        imagePane.reuseIdentifier = identifier;
+    }
+    [imagePane.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"politics%d.jpeg", index]]];
+    
+    return imagePane;
+}
+
+- (CGFloat)streamView:(EKStreamView *)streamView heightForCellAtIndex:(NSInteger)index
+{
+//    return self.view.frame.size.height/2;
+    return [[randomHeights objectAtIndex:index] floatValue];
+}
 @end

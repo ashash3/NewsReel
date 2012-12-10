@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EKStreamView.h"
 
-@interface PoliticsViewController : UIViewController
+@interface PoliticsViewController : UIViewController <EKStreamViewDelegate>
+{
+    NSMutableArray *randomHeights;
+}
+@property (weak, nonatomic) IBOutlet EKStreamView *stream;
 
 @end
