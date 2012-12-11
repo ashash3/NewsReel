@@ -1,11 +1,13 @@
 #import "PictureAggregator.h"
+#import "Bing.h"
 
 @implementation PictureAggregator
 
 - (id) init {
 	self->debug = NO;
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	bing = [[[Bing alloc] init] autorelease];
+//	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+//	bing = [[[Bing alloc] init] autorelease];
+    bing = [[Bing alloc] init];
 	searchCategory = @"'rt_Sports'";
 	return self;
 }
@@ -38,7 +40,7 @@
 			[[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
 									 beforeDate:[NSDate distantFuture]];
 		}
-		ImageObject* currImage = [bing getCurrentPicture];
+//		ImageObject* currImage = [bing getCurrentPicture];
 		parsedImages++;
 	}
 	if (debug) NSLog(@"Done with picture aggregation");
@@ -58,8 +60,19 @@
 	NSMutableArray* newsStories = [self getNewsStoriesForCategory:searchCategory];
 	NSMutableArray* imageObjects = [self getPicturesForNews:newsStories];
 	if (debug) [bing printPictureArray];
-	[self close];
-	return imageObjects;
+//	[self close];
+	return [self removeNullPictures:imageObjects];
+}
+
+- (NSMutableArray*) removeNullPictures:(NSMutableArray*)pictureArray {
+	NSMutableArray *itemsToKeep = [NSMutableArray arrayWithCapacity:[pictureArray count]];
+	for (ImageObject *image in pictureArray) {
+		if (image.caption && image.articleLink && image.picLink && image.thumbnail) {
+			[itemsToKeep addObject:image];
+		}
+	}
+	[pictureArray setArray:itemsToKeep];
+	return pictureArray;
 }
 
 - (void) imageTestSearch {
@@ -80,9 +93,9 @@
 	}
 }
 
-- (int) close {
-	[pool drain];
-	return 0;
-} 
+//- (int) close {
+//	[pool drain];
+//	return 0;
+//} 
 
 @end

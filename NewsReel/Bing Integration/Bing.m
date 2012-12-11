@@ -89,7 +89,8 @@
 	if (connection)
 	{
 		if (debug) NSLog(@"Connection established");
-		self->responseData = [[NSMutableData data] retain];
+//		self->responseData = [[NSMutableData data] retain];
+		self->responseData = [NSMutableData data];
 	}
 	else
 	{
@@ -148,8 +149,8 @@
 	[parser parse];
 
 	// release the connection, and the data object
-	[connection release];
-	[self->responseData release];
+//	[connection release];
+//	[self->responseData release];
 	self->busy = NO;
 	if (debug) NSLog(@"Connection is done loading!");
 }
@@ -160,8 +161,8 @@
  ***/
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-	[connection release];
-	[self->responseData release];
+//	[connection release];
+//	[self->responseData release];
 	if (debug) NSLog(@"Connection failed Error - %@", [error localizedDescription]);
 	self->busy = NO;
 }

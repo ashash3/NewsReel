@@ -5,7 +5,7 @@
 {
 @private
 	Bing* bing;
-	NSAutoreleasePool *pool;
+//	NSAutoreleasePool *pool;
 	NSString* searchCategory;
 	BOOL debug;
 }
@@ -13,8 +13,9 @@
 - (id) init;
 - (NSMutableArray*) getNewsStoriesForCategory:(NSString*)category;
 - (NSMutableArray*) getPicturesForNews:(NSMutableArray*)newsStories;
-- (int) close;
+// - (int) close;
 - (void) imageTestSearch;
 - (NSMutableArray*) getImages:(NSString*)category;
 - (void) printArray:(NSMutableArray*)array;
+- (NSMutableArray*) removeNullPictures:(NSMutableArray*)pictureArray;
 @end
