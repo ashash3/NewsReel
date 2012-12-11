@@ -48,6 +48,9 @@
 		AB1BD5661676F16B00DCA590 /* NewsReelAppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD5651676F16A00DCA590 /* NewsReelAppIcon@2x.png */; };
 		AB1BD56F1676F36B00DCA590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD56E1676F36B00DCA590 /* Default@2x.png */; };
 		ABCCB4561676FA710032BF80 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB4551676FA710032BF80 /* ImageObject.m */; };
+		ABCCB46F1677AF2F0032BF80 /* Bing.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB46A1677AF2F0032BF80 /* Bing.m */; };
+		ABCCB4701677AF2F0032BF80 /* NSData_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB46C1677AF2F0032BF80 /* NSData_Base64.m */; };
+		ABCCB4711677AF2F0032BF80 /* PictureAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB46E1677AF2F0032BF80 /* PictureAggregator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,12 @@
 		AB1BD56E1676F36B00DCA590 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ABCCB4541676FA710032BF80 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
 		ABCCB4551676FA710032BF80 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
+		ABCCB4691677AF2F0032BF80 /* Bing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bing.h; sourceTree = "<group>"; };
+		ABCCB46A1677AF2F0032BF80 /* Bing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bing.m; sourceTree = "<group>"; };
+		ABCCB46B1677AF2F0032BF80 /* NSData_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSData_Base64.h; sourceTree = "<group>"; };
+		ABCCB46C1677AF2F0032BF80 /* NSData_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSData_Base64.m; sourceTree = "<group>"; };
+		ABCCB46D1677AF2F0032BF80 /* PictureAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureAggregator.h; sourceTree = "<group>"; };
+		ABCCB46E1677AF2F0032BF80 /* PictureAggregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureAggregator.m; sourceTree = "<group>"; };
 		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,6 +185,7 @@
 				AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */,
 				AB1BD49D167568A700DCA590 /* UIButton+NewsReelAdditions.h */,
 				AB1BD49E167568A700DCA590 /* UIButton+NewsReelAdditions.m */,
+				ABCCB4681677AF2F0032BF80 /* Bing Integration */,
 				AB1BD4CA167585CF00DCA590 /* Politics Images */,
 				AB1BD50A1675E75C00DCA590 /* Sports Images */,
 				AB1BD49A1675557500DCA590 /* Resources */,
@@ -236,6 +246,20 @@
 				AB1BD50F1675E75D00DCA590 /* sports4.jpg */,
 			);
 			path = "Sports Images";
+			sourceTree = "<group>";
+		};
+		ABCCB4681677AF2F0032BF80 /* Bing Integration */ = {
+			isa = PBXGroup;
+			children = (
+				ABCCB4691677AF2F0032BF80 /* Bing.h */,
+				ABCCB46A1677AF2F0032BF80 /* Bing.m */,
+				ABCCB46B1677AF2F0032BF80 /* NSData_Base64.h */,
+				ABCCB46C1677AF2F0032BF80 /* NSData_Base64.m */,
+				ABCCB46D1677AF2F0032BF80 /* PictureAggregator.h */,
+				ABCCB46E1677AF2F0032BF80 /* PictureAggregator.m */,
+			);
+			name = "Bing Integration";
+			path = "Politics Images/Bing Integration";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +379,9 @@
 				AB1BD5021675D20A00DCA590 /* WaterfallViewController.m in Sources */,
 				AB1BD55B1676EDAE00DCA590 /* WebViewController.m in Sources */,
 				ABCCB4561676FA710032BF80 /* ImageObject.m in Sources */,
+				ABCCB46F1677AF2F0032BF80 /* Bing.m in Sources */,
+				ABCCB4701677AF2F0032BF80 /* NSData_Base64.m in Sources */,
+				ABCCB4711677AF2F0032BF80 /* PictureAggregator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
