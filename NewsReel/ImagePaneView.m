@@ -24,8 +24,7 @@
         caption = [[UILabel alloc] initWithFrame:contentView.bounds];
         caption.backgroundColor = [UIColor clearColor];
         caption.text = @"This is a caption! This is a caption!";
-        [caption setFont:[UIFont fontWithName:@"Verdana-Italic" size:11.5]];
-        
+        [caption setFont:[UIFont fontWithName:@"Verdana-Italic" size:11.5]];        
         imageView = [[UIImageView alloc] initWithFrame:contentView.bounds];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         

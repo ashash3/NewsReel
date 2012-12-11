@@ -10,6 +10,8 @@
 
 @interface SingleImageViewController : UIViewController
 @property (copy, nonatomic) NSString* imageIndex;
-@property (weak, nonatomic) IBOutlet UIImageView *currentImage;
+@property (strong, nonatomic) UIImageView *currentImage;
+@property (strong, nonatomic) UIView* captionView;
+@property (strong, nonatomic) UILabel* caption;
 
 @end
