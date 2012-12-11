@@ -20,7 +20,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         contentView = [[UIView alloc] initWithFrame:self.bounds];
-        
+        contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+
         caption = [[UILabel alloc] initWithFrame:contentView.bounds];
         caption.backgroundColor = [UIColor clearColor];
         [caption setFont:[UIFont fontWithName:@"Verdana-Italic" size:11.5]];        
@@ -39,15 +40,17 @@
         imageView.layer.shadowRadius = 0.75f;
         imageView.layer.shadowOpacity = 0.8f;
         imageView.layer.shadowOffset = CGSizeMake(0, 1);
+        imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
         
         self.layer.masksToBounds = NO;
         self.layer.shadowColor = [UIColor darkGrayColor].CGColor;
         self.layer.shadowRadius = 1.5f;
         self.layer.shadowOpacity = 0.8f;
         self.layer.shadowOffset = CGSizeMake(0.5, 2);
+        [self.layer setCornerRadius:2.0f];
+        
         [self addSubview:contentView];
 
-        [self.layer setCornerRadius:2.0f];        
     }
     return self;
 }
