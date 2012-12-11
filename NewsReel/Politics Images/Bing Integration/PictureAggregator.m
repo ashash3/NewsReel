@@ -61,7 +61,18 @@
 	NSMutableArray* imageObjects = [self getPicturesForNews:newsStories];
 	if (debug) [bing printPictureArray];
 //	[self close];
-	return imageObjects;
+	return [self removeNullPictures:imageObjects];
+}
+
+- (NSMutableArray*) removeNullPictures:(NSMutableArray*)pictureArray {
+	NSMutableArray *itemsToKeep = [NSMutableArray arrayWithCapacity:[pictureArray count]];
+	for (ImageObject *image in pictureArray) {
+		if (image.caption && image.articleLink && image.picLink && image.thumbnail) {
+			[itemsToKeep addObject:image];
+		}
+	}
+	[pictureArray setArray:itemsToKeep];
+	return pictureArray;
 }
 
 - (void) imageTestSearch {

@@ -17,4 +17,5 @@
 - (void) imageTestSearch;
 - (NSMutableArray*) getImages:(NSString*)category;
 - (void) printArray:(NSMutableArray*)array;
+- (NSMutableArray*) removeNullPictures:(NSMutableArray*)pictureArray;
 @end
