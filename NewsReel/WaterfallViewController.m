@@ -11,7 +11,6 @@
 #import "SingleImageViewController.h"
 
 @interface WaterfallViewController ()
-
 @end
 
 @implementation WaterfallViewController
@@ -31,7 +30,6 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
-//    self.title = @"Politics";
     randomHeights = [[NSMutableArray alloc] initWithCapacity:100];
     for (int i = 0; i < 100; i++) {
         CGFloat h = arc4random() % 200 + 125.f;
@@ -73,8 +71,10 @@
         UITapGestureRecognizer *selectionTap = [[UITapGestureRecognizer alloc]
                                                 initWithTarget:self action:@selector(handleSingleTap:)];
         [imagePane addGestureRecognizer:selectionTap];
+        if (index % 2 == 0) {
+            imagePane.caption.text = @"Cnn news reports statistics show that the average number of apples eaten";
+        }
     }
-//    [imagePane.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"politics%d.jpeg", index]]];
     [imagePane.imageView setImage:[UIImage imageNamed:[images objectAtIndex:index]]];
     imagePane.tag = index;
     
@@ -93,12 +93,12 @@
     return header;
 }
 
-#pragma mark - Gesture Recognizer
+#pragma mark - Selectors
 - (IBAction)handleSingleTap:(UIGestureRecognizer*)sender
 {
     SingleImageViewController* singleImage = [[SingleImageViewController alloc] initWithNibName:@"SingleImageViewController" bundle:nil];
     [self.navigationController pushViewController:singleImage animated:YES];
-//    singleImage.imageIndex = [NSString stringWithFormat:@"politics%d.jpeg", sender.view.tag];
     singleImage.imageIndex = [images objectAtIndex:sender.view.tag];
 }
+
 @end

@@ -16,4 +16,5 @@
 
 @property (nonatomic, readonly) UIImageView* imageView;
 @property (nonatomic, readonly) UIView* contentView;
+@property (nonatomic, readonly) UILabel* caption;
 @end

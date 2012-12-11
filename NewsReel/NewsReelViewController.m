@@ -9,7 +9,6 @@
 #import "NewsReelViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIButton+NewsReelAdditions.h"
-#import "PoliticsViewController.h"
 #import "WaterfallViewController.h"
 
 @interface NewsReelViewController ()
@@ -39,6 +38,7 @@
 - (IBAction)buttonPressed:(UIButton*)sender
 {
     if (sender.tag == 0) {
+        // Replace with a getPhotos call to model
         NSMutableArray* politicsPhotos = [[NSMutableArray alloc] init];
         for (int i = 0; i < 5; i++) {
             [politicsPhotos addObject:[NSString stringWithFormat:@"politics%d.jpeg", i]];
@@ -47,8 +47,16 @@
         politicsWaterfall.images = politicsPhotos;
         politicsWaterfall.title = @"Politics";
         [self.navigationController pushViewController:politicsWaterfall animated:YES];
-//        [self.navigationController pushViewController:[[PoliticsViewController alloc] initWithNibName:@"PoliticsViewController" bundle:nil] animated:YES];
-    } 
+    } else if (sender.tag == 1) {
+        NSMutableArray* sportsPhotos = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 5; i++) {
+            [sportsPhotos addObject:[NSString stringWithFormat:@"sports%d.jpg", i]];
+        }
+        WaterfallViewController* sportsWaterfall = [[WaterfallViewController alloc] initWithNibName:@"WaterfallViewController" bundle:nil];
+        sportsWaterfall.images = sportsPhotos;
+        sportsWaterfall.title = @"Sports";
+        [self.navigationController pushViewController:sportsWaterfall animated:YES];
+    }
 }
 
 @end
