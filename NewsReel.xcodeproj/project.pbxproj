@@ -46,6 +46,8 @@
 		AB1BD5131675E75D00DCA590 /* sports3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD50E1675E75D00DCA590 /* sports3.jpg */; };
 		AB1BD5141675E75D00DCA590 /* sports4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD50F1675E75D00DCA590 /* sports4.jpg */; };
 		AB1BD5511676A4B500DCA590 /* cardboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD5501676A4B400DCA590 /* cardboard@2x.png */; };
+		AB1BD55B1676EDAE00DCA590 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BD5591676EDAE00DCA590 /* WebViewController.m */; };
+		AB1BD55C1676EDAE00DCA590 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD55A1676EDAE00DCA590 /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,9 @@
 		AB1BD50E1675E75D00DCA590 /* sports3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sports3.jpg; sourceTree = "<group>"; };
 		AB1BD50F1675E75D00DCA590 /* sports4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sports4.jpg; sourceTree = "<group>"; };
 		AB1BD5501676A4B400DCA590 /* cardboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardboard@2x.png"; sourceTree = "<group>"; };
+		AB1BD5581676EDAD00DCA590 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		AB1BD5591676EDAE00DCA590 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		AB1BD55A1676EDAE00DCA590 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +153,9 @@
 		AB1BD4791675538F00DCA590 /* NewsReel */ = {
 			isa = PBXGroup;
 			children = (
+				AB1BD5581676EDAD00DCA590 /* WebViewController.h */,
+				AB1BD5591676EDAE00DCA590 /* WebViewController.m */,
+				AB1BD55A1676EDAE00DCA590 /* WebViewController.xib */,
 				AB1BD4E1167588F900DCA590 /* ImagePaneView.h */,
 				AB1BD4E2167588F900DCA590 /* ImagePaneView.m */,
 				AB1BD4821675539000DCA590 /* NewsReelAppDelegate.h */,
@@ -307,6 +315,7 @@
 				AB1BD5131675E75D00DCA590 /* sports3.jpg in Resources */,
 				AB1BD5141675E75D00DCA590 /* sports4.jpg in Resources */,
 				AB1BD5511676A4B500DCA590 /* cardboard@2x.png in Resources */,
+				AB1BD55C1676EDAE00DCA590 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 				AB1BD4E3167588F900DCA590 /* ImagePaneView.m in Sources */,
 				AB1BD4FD1675A7D100DCA590 /* SingleImageViewController.m in Sources */,
 				AB1BD5021675D20A00DCA590 /* WaterfallViewController.m in Sources */,
+				AB1BD55B1676EDAE00DCA590 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
