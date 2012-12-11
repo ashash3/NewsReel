@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageObject.h"
 
 @interface SingleImageViewController : UIViewController
-@property (copy, nonatomic) NSString* imageIndex;
+@property (copy, nonatomic) ImageObject* imageModel;
 @property (strong, nonatomic) UIImageView *currentImage;
 @property (strong, nonatomic) UIView* captionView;
 @property (strong, nonatomic) UILabel* caption;

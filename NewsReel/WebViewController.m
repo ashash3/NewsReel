@@ -14,6 +14,13 @@
 
 @implementation WebViewController
 @synthesize webView;
+@synthesize articleLink = _articleLink;
+
+- (void)setArticleLink:(NSString *)articleLink
+{
+    _articleLink = [articleLink copy];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_articleLink]]];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +36,6 @@
     [super viewDidLoad];
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.webView];
-    NSString* urlAddress = @"http://www.google.com";
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlAddress]]];
 }
 
 - (void)didReceiveMemoryWarning

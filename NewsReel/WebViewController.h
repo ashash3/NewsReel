@@ -10,6 +10,7 @@
 
 @interface WebViewController : UIViewController
 
-@property (strong, nonatomic) UIWebView *webView;
+@property (strong, nonatomic) NSString* articleLink;
+@property (strong, nonatomic) UIWebView* webView;
 
 @end

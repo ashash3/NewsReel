@@ -9,6 +9,8 @@
 #import "WaterfallViewController.h"
 #import "ImagePaneView.h"
 #import "SingleImageViewController.h"
+#import "ImageObject.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface WaterfallViewController ()
 @end
@@ -71,11 +73,9 @@
         UITapGestureRecognizer *selectionTap = [[UITapGestureRecognizer alloc]
                                                 initWithTarget:self action:@selector(handleSingleTap:)];
         [imagePane addGestureRecognizer:selectionTap];
-        if (index % 2 == 0) {
-            imagePane.caption.text = @"Cnn news reports statistics show that the average number of apples eaten";
-        }
     }
-    [imagePane.imageView setImage:[UIImage imageNamed:[images objectAtIndex:index]]];
+    imagePane.caption.text = ((ImageObject*)[images objectAtIndex:index]).caption;
+    [imagePane.imageView setImageWithURL:[NSURL URLWithString:((ImageObject*)[images objectAtIndex:index]).picLink]];
     imagePane.tag = index;
     
     return imagePane;
@@ -98,7 +98,7 @@
 {
     SingleImageViewController* singleImage = [[SingleImageViewController alloc] initWithNibName:@"SingleImageViewController" bundle:nil];
     [self.navigationController pushViewController:singleImage animated:YES];
-    singleImage.imageIndex = [images objectAtIndex:sender.view.tag];
+    singleImage.imageModel = ((ImageObject*)[images objectAtIndex:sender.view.tag]);
 }
 
 @end

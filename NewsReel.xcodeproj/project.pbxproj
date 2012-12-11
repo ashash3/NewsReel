@@ -47,6 +47,7 @@
 		AB1BD55C1676EDAE00DCA590 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD55A1676EDAE00DCA590 /* WebViewController.xib */; };
 		AB1BD5661676F16B00DCA590 /* NewsReelAppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD5651676F16A00DCA590 /* NewsReelAppIcon@2x.png */; };
 		AB1BD56F1676F36B00DCA590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1BD56E1676F36B00DCA590 /* Default@2x.png */; };
+		ABCCB4561676FA710032BF80 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCB4551676FA710032BF80 /* ImageObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,8 @@
 		AB1BD55A1676EDAE00DCA590 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		AB1BD5651676F16A00DCA590 /* NewsReelAppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewsReelAppIcon@2x.png"; sourceTree = "<group>"; };
 		AB1BD56E1676F36B00DCA590 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		ABCCB4541676FA710032BF80 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
+		ABCCB4551676FA710032BF80 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
 		FC897B5291284510ABCCDE55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -166,6 +169,8 @@
 				AB1BD4FF1675D20900DCA590 /* WaterfallViewController.h */,
 				AB1BD5001675D20900DCA590 /* WaterfallViewController.m */,
 				AB1BD5011675D20A00DCA590 /* WaterfallViewController.xib */,
+				ABCCB4541676FA710032BF80 /* ImageObject.h */,
+				ABCCB4551676FA710032BF80 /* ImageObject.m */,
 				AB1BD4FA1675A7D000DCA590 /* SingleImageViewController.h */,
 				AB1BD4FB1675A7D000DCA590 /* SingleImageViewController.m */,
 				AB1BD4FC1675A7D100DCA590 /* SingleImageViewController.xib */,
@@ -349,6 +354,7 @@
 				AB1BD4FD1675A7D100DCA590 /* SingleImageViewController.m in Sources */,
 				AB1BD5021675D20A00DCA590 /* WaterfallViewController.m in Sources */,
 				AB1BD55B1676EDAE00DCA590 /* WebViewController.m in Sources */,
+				ABCCB4561676FA710032BF80 /* ImageObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
