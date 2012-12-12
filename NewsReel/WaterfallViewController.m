@@ -77,6 +77,7 @@
     imagePane.caption.text = ((ImageObject*)[images objectAtIndex:index]).caption;
     [imagePane.imageView setImageWithURL:[NSURL URLWithString:((ImageObject*)[images objectAtIndex:index]).picLink]];
     imagePane.tag = index;
+    [imagePane setNeedsLayout];
     
     return imagePane;
 }

@@ -30,11 +30,9 @@
         
         [contentView addSubview:imageView];
         [contentView addSubview:caption];
+        [contentView.layer setCornerRadius:2.0f];
+        imageView.clipsToBounds = YES;
         contentView.clipsToBounds = YES;
-        self.backgroundColor = [UIColor colorWithRed:210.0/255.0
-                                               green:207.0/255.0
-                                                blue:201.0/255.0
-                                               alpha:1.0];
         imageView.layer.masksToBounds = NO;
         imageView.layer.shadowColor = [UIColor darkGrayColor].CGColor;
         imageView.layer.shadowRadius = 0.75f;
@@ -50,7 +48,6 @@
         [self.layer setCornerRadius:2.0f];
         
         [self addSubview:contentView];
-
     }
     return self;
 }
@@ -60,15 +57,16 @@
     [super layoutSubviews];
     // Size of frame is equal to the randomized size generated
     contentView.frame = self.bounds;
-    caption.frame = CGRectMake(contentView.frame.size.width*0.02,
-                               contentView.frame.size.height-caption.font.pointSize*2.7,
-                               contentView.frame.size.width*0.96,
+    caption.frame = CGRectMake(contentView.bounds.size.width*0.02,
+                               contentView.bounds.size.height-caption.font.pointSize*2.7,
+                               contentView.bounds.size.width*0.96,
                                caption.font.pointSize*2.8);
+    
 
     imageView.frame = CGRectMake(0,
                                  0,
-                                 contentView.frame.size.width,
-                                 contentView.frame.size.height-caption.frame.size.height);    
+                                 contentView.bounds.size.width,
+                                 contentView.bounds.size.height-caption.frame.size.height);    
     caption.numberOfLines = 0;
     self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
     imageView.layer.shadowPath = [UIBezierPath bezierPathWithRect:imageView.bounds].CGPath;
